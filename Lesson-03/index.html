@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+    <head>
+
+    </head>
+    <body>
+        <script>
+            let a = 'My name is .. ';
+            let b = 'Idalia';
+            let c = a + b;
+            console.log(c);
+
+            const coffe = 5, bagel = 3;
+            const totalCost = coffe + bagel ;
+            console.log('Total cost : $' + totalCost);
+            const d = `Total cost : $${coffe + bagel}`
+            console.log(d);
+            alert(d)
+
+            const kaffee = 5.99 * 100, bagels = 2.95 * 100;
+            const total = (kaffee + bagels)/100;
+            const totalInInterpolation = `Total cost : $${total}`;
+            console.log('Total cost : $' + total);
+            console.log(totalInInterpolation);
+            alert(totalInInterpolation);
+            console.log(totalInInterpolation + '\nThank you, come again!');
+            alert(`Total cost : $${total} \nThank you, come again! `);
+
+            let toaster = 1899, basketball = 2095 , tshirt = 799;
+            let shipping = 499 + 499;
+            let costBeforeShippingTax = (2 * basketball + 2 * tshirt);
+            console.log(costBeforeShippingTax / 100);
+            let totalBeforeTax = (costBeforeShippingTax + shipping);
+            console.log(totalBeforeTax / 100);
+            let estimatedTax = Math.round(10/100 * totalBeforeTax);
+            console.log(estimatedTax / 100);
+            console.log((totalBeforeTax + estimatedTax)/100);
+
+
+        </script>
+    </body>
+</html>
