@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+    <head>
+
+    </head>
+    <body>
+        <button>9a</button>
+        <button class="button-b">9b</button>
+
+        <button onclick="document.querySelector('.demo').innerHTML = 'You chose: heads'; ">heads</button>
+        <button onclick="document.querySelector('.demo').innerHTML = 'You chose: tails'; ">tails</button>
+        <p class="demo"></p>
+
+        <!-- 
+        <input placeholder="Name" class="the-name" onkeydown="
+            if(event.key === 'Enter') {
+                const result = document.querySelector('.the-name');
+                document.querySelector('.para').innerHTML = `Your name is: ${result.value}`;
+            }
+        ">
+        -->
+        <input placeholder="Name" class="the-name" 
+        onkeydown=" 
+            if(event.key === 'Enter'){
+                enterName();
+                }">
+        <button onclick=" enterName();">submit</button>
+        <p class="para"></p>
+
+
+        <input placeholder="Text" class="box" onkeyup="updateText();">
+        <p class="paragraph"></p>
+
+
+        <!--
+        <button onclick="choseButton('heads')">heads</button>
+        <button onclick="choseButton('tails')">tails</button>
+        <p id="para"></p>
+        <script>
+            // getting the button from the page
+            console.log(document.querySelector('button'));
+            
+            document.querySelector('.button-b').innerHTML = '9b done!';
+            
+            let value;
+            function choseButton(value){
+                document.getElementById("para").innerHTML = `You chose: ${value}`;
+            }
+        -->
+
+       <!--       USING QUERY SELECTOR    --> 
+        <script>
+            // getting the button from the page
+            console.log(document.querySelector('button'));
+
+            function enterName(){
+                const result = document.querySelector('.the-name');
+                document.querySelector('.para').innerHTML = `Your name is: ${result.value}`;
+            }
+
+            function updateText(){
+                const type = document.querySelector('.box');
+                document.querySelector('.paragraph').innerHTML = type.value;
+            }
+        </script>
+    </body>
+</html>
