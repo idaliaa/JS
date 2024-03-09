@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+    <head>
+
+    </head>
+    <body>
+        <button>hello</button>
+        <button class="js-button">Second button</button>
+
+        <input placeholder="$" class="input-price">
+        <button class="price-button" onclick="calculate();">Calculate</button>
+        <p class="price"></p>
+
+        <script>
+        console.log(document.querySelector('button').innerHTML);
+        document.querySelector('button').innerHTML = 'Changed';
+
+        const buttonElement = document.querySelector('.js-button');
+        console.log(buttonElement);
+
+        function calculate(){
+            let result = document.querySelector('.input-price');
+            if(result.value < 0){
+                document.querySelector('.price').innerHTML = 'Error: cost cannot be less than $0';
+            } else {
+                document.querySelector('.price').innerHTML = `$${result.value}`;
+        }
+        }
+
+
+        </script>
+
+    </body>
+</html>
