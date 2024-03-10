@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+    <head>
+
+    </head>
+    <body>
+        <script>
+            let soup = 10;
+            let burger = 8;
+            let iceCream = 5;
+            let allCost = soup + 3*burger + iceCream;
+            console.log(allCost);
+            console.log(allCost /3);
+
+            let toaster1 = 18.50, shirts = 7.50;
+            let totalCost = toaster1 + 2 * shirts;
+            console.log(totalCost);
+            console.log((10/100) * totalCost);
+            console.log((20/100) * totalCost);
+
+            let toaster = 1899, basketball = 2095 , tshirt = 799;
+            let shipping = 499;
+            let costBeforeShippingTax = (toaster + basketball + tshirt);
+            let totalBeforeTax = (costBeforeShippingTax + shipping);
+            let estimatedTax = Math.round(10/100 * totalBeforeTax);
+            let orderTotal = estimatedTax + totalBeforeTax;
+            console.log(orderTotal/ 100);
+
+            console.log(Math.floor(2.8));
+            console.log(Math.ceil(2.2));
+
+            let fahrenheit;
+            let celcius;
+
+            function fahrenheitToCelcius(celcius){
+                return (celcius * 9/5) + 32;
+            }
+            
+            function celciusToFahrenheit(fahrenheit){
+                return (fahrenheit - 32) * 5/9;
+            }
+            
+            console.log(fahrenheitToCelcius(25));
+            console.log(celciusToFahrenheit(86));
+            console.log(fahrenheitToCelcius(-5));
+            
+        </script>
+    </body>
+</html>
